@@ -1,0 +1,5 @@
+port: 50051
+mongo:
+  url: "mongodb://db:27017"
+  database: "products-fetcher-db"
+  collection: "products"

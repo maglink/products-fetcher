@@ -1,0 +1,24 @@
+version: "3.5"
+services:
+  db:
+    image: mongo
+    networks:
+      - "app_net"
+    ports:
+      - "27017:27017"
+  app:
+    build: ./
+    networks:
+      - "app_net"
+    depends_on:
+      - db
+  nginx:
+    build: ./nginx
+    ports:
+      - "50050:50050"
+    networks:
+      - "app_net"
+    depends_on:
+      - app
+networks:
+  app_net:
