@@ -1,4 +1,4 @@
-# Products Storage
+# Products Fetcher
 
 ##### gRPC server which can fetch products list and then show their list
 
