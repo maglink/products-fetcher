@@ -24,9 +24,12 @@ name, price, last_update, updates_count
 ##
 
 ### How to run
-
+```
 git clone github.com/maglink/products-fetcher
 cd products-fetcher
+make docker-run
+```
+
 
 
 
